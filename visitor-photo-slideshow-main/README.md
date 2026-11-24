@@ -122,7 +122,7 @@ Designed for museum exhibitions, art galleries, and experiential events, the pla
    ```
 
 6. **Open the applications in your browser**:
-   - **Visitor Check-In & Privacy Form**: [http://localhost:3000](http://localhost:3000)
+   - **Visitor Check-In & Privacy Form**: [http://localhost:3000/](http://localhost:3000)
    - **Smart TV Exhibition Display**: [http://localhost:3000/display](http://localhost:3000/display)
 
 ---

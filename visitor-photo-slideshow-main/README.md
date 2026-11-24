@@ -1,6 +1,6 @@
 # Visitor Photo Slideshow & Exhibition Display
 
-live link :- https://visitor-photo-slideshow-tau.vercel.app/
+
 
 A full-stack, privacy-conscious event photography and exhibition slideshow application built with **Next.js 14+ (App Router)**, **TypeScript**, **Tailwind CSS**, **Prisma ORM with PostgreSQL (Neon)**, and **Cloudinary** for persistent media storage. Vercel deployment ready.
 

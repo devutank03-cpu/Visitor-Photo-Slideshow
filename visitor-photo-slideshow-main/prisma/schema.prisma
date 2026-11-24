@@ -1,0 +1,27 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Visitor {
+  id        String   @id @default(uuid())
+  name      String
+  contact   String   @unique
+  createdAt DateTime @default(now())
+  photos    Photo[]
+}
+
+model Photo {
+  id           String   @id @default(uuid())
+  visitorId    String
+  visitor      Visitor  @relation(fields: [visitorId], references: [id], onDelete: Cascade)
+  imageUrl     String
+  consentGiven Boolean
+  status       String   @default("QUEUED")
+  playCount    Int      @default(0)
+  createdAt    DateTime @default(now())
+}
